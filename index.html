@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — NORV</title>
+<meta name="description" content="How the NORV app handles your data. Private by default, offline-first.">
+<style>
+  :root {
+    --black: #020202;
+    --lime: #C8FF00;
+    --orange: #FF6B35;
+    --ink: #EDEDED;
+    --muted: #8A8A85;
+    --line: #1C1C1A;
+    --card: #0A0A09;
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--black);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0.005em;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 120px;
+  }
+
+  /* Header */
+  header {
+    border-bottom: 1px solid var(--line);
+    padding: 56px 0 36px;
+    margin-bottom: 48px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .brand svg { display: block; }
+
+  .brand-name {
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.18em;
+    color: var(--ink);
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--lime);
+    margin: 0 0 14px;
+  }
+
+  h1 {
+    font-size: clamp(34px, 7vw, 52px);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 18px;
+    color: #fff;
+  }
+
+  .updated {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  /* Lede */
+  .lede {
+    font-size: 19px;
+    line-height: 1.65;
+    color: #CFCFCB;
+    margin: 0 0 8px;
+  }
+
+  /* Sections */
+  section { margin-top: 48px; }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--lime);
+    margin: 0 0 18px;
+    padding-top: 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  h2 .num {
+    color: var(--muted);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    min-width: 22px;
+  }
+
+  h2 .txt {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    text-transform: none;
+    font-weight: 800;
+  }
+
+  p { margin: 0 0 18px; }
+
+  a {
+    color: var(--lime);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(200, 255, 0, 0.3);
+    transition: border-color 0.15s ease;
+    word-break: break-word;
+  }
+  a:hover { border-bottom-color: var(--lime); }
+
+  strong { color: #fff; font-weight: 700; }
+
+  ul {
+    margin: 0 0 18px;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    color: #CFCFCB;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid var(--lime);
+  }
+
+  /* Contact card */
+  .contact-card {
+    margin-top: 24px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 26px 28px;
+  }
+
+  .contact-card .who {
+    font-weight: 800;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .contact-card .role {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .contact-card .mail {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  footer .tag {
+    color: var(--lime);
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    .wrap { padding: 0 20px 90px; }
+    header { padding: 40px 0 30px; }
+    h2 { flex-direction: column; gap: 6px; }
+    h2 .num { min-width: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    a { transition: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+        <polygon points="13,3 24,23 2,23" fill="#C8FF00"/>
+      </svg>
+      <span class="brand-name">NORV</span>
+    </div>
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 10, 2026</p>
+  </header>
+
+  <p class="lede">This Privacy Policy explains how the NORV mobile application (&ldquo;NORV&rdquo;, &ldquo;the app&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) handles information. NORV is designed to be private by default: the app works entirely offline and does not require an account.</p>
+
+  <section>
+    <h2><span class="num">01</span><span class="txt">Who we are</span></h2>
+    <p>NORV is created and operated by <strong>Charlène Dumas</strong>, an independent developer, who acts as the data controller for the app (&ldquo;we&rdquo;, &ldquo;us&rdquo;).</p>
+    <p>For any question regarding this policy or your privacy, you can contact us at <a href="mailto:contact@studiosharl.com">contact@studiosharl.com</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span><span class="txt">Our approach to your data</span></h2>
+    <p>NORV is built to keep your information on your device. We do not operate user accounts, we do not run a backend server that stores your personal content, and we do not sell or share your data with advertisers or data brokers.</p>
+    <p>All the data you create in the app &mdash; your habits, streaks, progress, scores, and settings &mdash; is stored <strong>locally on your device</strong> using your device&rsquo;s standard storage. This information never leaves your phone through us, and we have no access to it.</p>
+    <p>If you delete the app, this locally stored data is removed along with it.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span><span class="txt">Crash and error reporting (Sentry)</span></h2>
+    <p>To keep NORV stable and fix problems quickly, the app uses <strong>Sentry</strong>, a third-party error-monitoring service, to collect technical diagnostic information when the app crashes or encounters an error.</p>
+    <p><strong>What is collected:</strong></p>
+    <ul>
+      <li>Crash reports and error logs</li>
+      <li>Technical performance and session diagnostic data needed to reproduce and fix the issue</li>
+      <li>Limited session replay information that is triggered when an error occurs</li>
+    </ul>
+    <p><strong>Privacy protections applied:</strong></p>
+    <ul>
+      <li>Sentry data is hosted on servers located in the <strong>European Union</strong>.</li>
+      <li><strong>Masking is enabled</strong>: text, images, and webview content are masked in session replay data, so the content of what you type or view is not exposed in these diagnostic reports.</li>
+      <li>This data is technical in nature. It is used only to diagnose and fix problems, is <strong>not linked to your identity</strong>, and is <strong>not used to track you</strong> across other apps or services.</li>
+    </ul>
+    <p>For more information on how Sentry processes data, see <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry&rsquo;s privacy policy</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span><span class="txt">What we do not do</span></h2>
+    <p>To be clear, NORV does <strong>not</strong>:</p>
+    <ul>
+      <li>require you to create an account or provide an email, name, or password to use the app</li>
+      <li>include third-party advertising</li>
+      <li>include third-party analytics or marketing trackers</li>
+      <li>track you across other apps, websites, or services</li>
+      <li>collect your location, contacts, photos, or other personal files</li>
+      <li>sell or rent any data to third parties</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span><span class="txt">Legal basis and your rights (GDPR)</span></h2>
+    <p>If you are located in the European Economic Area, the processing of crash and diagnostic data described above is based on our legitimate interest in maintaining a stable, functioning, and secure application.</p>
+    <p>Under the General Data Protection Regulation (GDPR), you have rights including the right to access, rectify, or request the erasure of personal data, the right to restrict or object to processing, and the right to lodge a complaint with a supervisory authority.</p>
+    <p>Because the diagnostic data collected through Sentry is technical and not linked to your identity, we are generally unable to associate it with a specific individual. If you wish to exercise any of your rights or have questions, please contact us at <a href="mailto:contact@studiosharl.com">contact@studiosharl.com</a> and we will respond in accordance with applicable law.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span><span class="txt">Children&rsquo;s privacy</span></h2>
+    <p>NORV is not directed at children under the age of 13 (or the equivalent minimum age in your jurisdiction), and we do not knowingly collect personal data from children.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span><span class="txt">Data retention</span></h2>
+    <p>Diagnostic and crash data collected through Sentry is retained only for as long as necessary to investigate and resolve technical issues, in accordance with Sentry&rsquo;s standard retention practices.</p>
+    <p>The personal content you create in the app is retained on your device for as long as you keep the app installed, and is under your control.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span><span class="txt">Changes to this policy</span></h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will revise the &ldquo;Last updated&rdquo; date at the top of this page. Significant changes will be reflected in an updated version of the app where appropriate.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span><span class="txt">Contact</span></h2>
+    <p>If you have any questions about this Privacy Policy or how NORV handles data, please contact:</p>
+    <div class="contact-card">
+      <div class="who">Charlène Dumas</div>
+      <div class="role">Independent developer</div>
+      <div class="mail"><a href="mailto:contact@studiosharl.com">contact@studiosharl.com</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 NORV</span>
+    <span class="tag">Become the proof</span>
+  </footer>
+
+</div>
+</body>
+</html>
